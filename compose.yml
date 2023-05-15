@@ -1,9 +1,10 @@
-ingress:
-    service: result
-    port: 8080  
-result:
-    build:      
-    context: Dockerfile  # Or you can specify an alternate monorepo
-    environment:
-      PORT: 8080
+gost:
+    ingress:
+        service: result
+        port: 8080  
+    result:
+        build: /      
+        context: Dockerfile  # Or you can specify an alternate monorepo
+        environment:
+        PORT: 8080
     
