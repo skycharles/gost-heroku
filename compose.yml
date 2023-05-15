@@ -2,6 +2,6 @@ ingress:
     service: worker
     port: 8080  
 worker:
-  build:
+  build: ./worker
     docker:
       web: Dockerfile
